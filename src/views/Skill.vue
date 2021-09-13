@@ -166,14 +166,7 @@ export default {
     return {
       nama: "muhammad ghifar ziady",
       aboutme: "When l was 19 years old already had an interest in web programming, from there wanted to make my passion into a job. I believe in learning through practice and seeking out these new experiences will make me a creative programmer.",
-      mine: " In addition to web programming I am also able in terms of video making from videography to cinematography.",
-
-      education:[
-        {id:1, sekolah:"Min Beureunuen", tahun:2012},
-        {id:2, sekolah:"MtsS jeumala amal", tahun:2015},
-        {id:3, sekolah:"MaS jeumala amal", tahun:2018},
-        {id:4, sekolah:"Politeknik Aceh", tahun:2018}
-      ]
+      mine: " In addition to web programming I am also able in terms of video making from videography to cinematography."
     }
   },
 }
