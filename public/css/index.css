@@ -1,7 +1,3 @@
-.darkmode .bg-light {
-    background-color: rgb(13 36 56) !important;
-}
-
 .lightmode .bg-light {
     background-color: rgb(189 229 253) !important;
 }
@@ -14,15 +10,7 @@ h2 {
     color: rgb(13 36 56) !important;
 }
 
-.darkmode h2 {
-    color: rgb(189 229 253) !important;
-}
-
 i {
-    color: rgb(189 229 253) !important;
-}
-
-.darkmode i {
     color: rgb(189 229 253) !important;
 }
 
@@ -34,20 +22,11 @@ p {
     color: rgb(189 229 253) !important;
 }
 
-.darkmode p {
-    color: rgb(189 229 253) !important;
-}
-
 .lightmode p {
     color: rgb(13 36 56) !important;
 }
 
 a {
-    color: rgb(189 229 253) !important;
-    text-decoration: none;
-}
-
-.darkmode a {
     color: rgb(189 229 253) !important;
     text-decoration: none;
 }
@@ -65,16 +44,8 @@ small {
     color: rgb(189 229 253) !important;
 }
 
-.darkmode small {
-    color: rgb(189 229 253) !important;
-}
-
 .lightmode small {
     color: rgb(13 36 56) !important;
-}
-
-.darkmode b {
-    color: rgb(189 229 253) !important;
 }
 
 .lightmode b {

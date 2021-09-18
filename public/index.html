@@ -64,7 +64,6 @@
 </head>
 
 <body>
-
     <div>
         <nav id="colorlib-main-nav" role="navigation">
             <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
@@ -91,19 +90,15 @@
                     <div>
                         <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
                     </div>
-                    <!-- <img onclick="setlightmode('true')" src="img/light.png" class="on" alt=""> -->
                     <div class="form-check form-switch">
                         <input class="form-check-input" onclick="setlightmode('true')" type="checkbox" id="flexSwitchCheckDefault">
                     </div>
-
                 </div>
             </header>
-
         </div>
     </div>
     </div>
     <div id="app"></div>
-
     <!-- bubbles -->
     <ul class="bg-bubbles">
         <li></li>
@@ -122,22 +117,20 @@
     <script src="style-navbar/js/popper.js"></script>
     <script src="style-navbar/js/bootstrap.min.js"></script>
     <script src="style-navbar/js/main.js"></script>
-
-
 </body>
 <script>
     if (localStorage.getItem('theme') == 'dark')
-        setlightmode()
-
+        setlightmode(true)
 
     function setlightmode() {
-        let light = document.body.classList.toggle('lightmode')
+        var light = document.body.classList.toggle('lightmode')
         if (light) {
-            localStorage.getItem('theme', 'dark')
+            localStorage.setItem('theme', 'dark')
+
         } else {
             localStorage.removeItem('theme')
         }
-        document.getElementById('darkBtn').innerHTML = Image
+
     }
 </script>
 <style>
