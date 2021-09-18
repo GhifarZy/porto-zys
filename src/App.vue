@@ -1,5 +1,6 @@
 <template>
 <div class="App">
+    <!-- <Navbar /> -->
      <router-view/>
      <Footer />
 </div>
@@ -9,12 +10,12 @@
 <script>
 
 import Footer from '@/components/Footer'
+// import Navbar from '@/components/Navbar'
 export default {  
   name: 'App',
   components:{
     Footer
   }
-
 }
 </script>
 

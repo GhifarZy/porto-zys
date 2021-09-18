@@ -1,6 +1,5 @@
 <template>
-<div>
-              <section class="feature_2 bg-light pt-90 pb-60 text-center">
+<div>         <section class="feature_2 bg-light pt-90 pb-60 text-center">
                 <div style="margin-top: 30px;" class="row">
                     <div class="col-lg-3">
                         <div class="container px-xl-0">
@@ -73,7 +72,7 @@
                                    <div class="row">
                                        <div v-for="item in experience" :key="item.id" class="col-lg-12">
                                                 <div style="
-                                                border-bottom: 6px double #404040;
+                                                border-bottom: 6px double rgba(255, 255, 255, 0.3);
                                                 padding:20px;
                                                 margin-bottom:12px;
                                                 display: inline-block;
@@ -123,7 +122,7 @@ export default {
       nama: "muhammad ghifar ziady",
       aboutme: "When l was 19 years old already had an interest in web programming, from there wanted to make my passion into a job. I believe in learning through practice and seeking out these new experiences will make me a creative programmer.",
       mine: " In addition to web programming I am also able in terms of video making from videography to cinematography.",
-      
+
       experience:[
           {id:1, tahun:2021, tentang:"sistem e-procurement al-hilal sigli", deskripsi:"Membangun sistem informasi pengadaan barang secara elektronik yaitu sistem e-procurement untuk Al - Hilal Sigli", pekerjaan:"Web Developer"},
            {id:2, tahun:2021, tentang:"sistem e-procurement kereta api indonesia", deskripsi:"Menjadi salah satu Quality Assurance dalam project E-proc di Promise PT. MItra MANDIRI INFORMATIKA Jakarta Selatan", pekerjaan:"Quality Assurance"},

@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:100,200,300,400,600,500,700,800,900|Karla:100,200,300,400,500,600,700,800,900&amp;subset=latin" rel="stylesheet">
     <!-- Bootstrap 4.3.1 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- Slick 1.8.1 jQuery plugin CSS (Sliders) -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Fancybox 3 jQuery plugin CSS (Open images and video in popup) -->
@@ -31,6 +32,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
     <!-- Startup 3 CSS (Styles for all blocks) -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
     <link href="css/bubbles.css" rel="stylesheet" />
     <link href="style-navbar/css/style.css" rel="stylesheet" />
     <!-- jQuery 3.3.1 -->
@@ -59,15 +61,10 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <!-- Startup 3 JS (Custom js for all blocks) -->
     <script src="js/script.js"></script>
-    <!-- navbar -->
-    <!-- header -->
-    <!-- <?php include 'header.php'?> -->
-    <!-- header -->
 </head>
 
 <body>
-    <!-- <div class="wrapper"> -->
-    <!-- navbar -->
+
     <div>
         <nav id="colorlib-main-nav" role="navigation">
             <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
@@ -79,25 +76,37 @@
                             <ul>
                                 <a style="color: white; " href="/" class="logo link color-main "><img class="logo" src="img/logoGUA.png" alt=""></a>
                                 <br><br>
-                                <li><a href="about">About</a>&nbsp;<a href="skill">Ability</a>&nbsp;<a href="experience">Experience</a></li>
+                                <li><a class="itemnav" href="about">About</a>&nbsp;
+                                    <a class="itemnav" href="skill">Ability</a>&nbsp;
+                                    <a class="itemnav" href="experience">Experience</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-        <div id="colorlib-page">
+        <div v-show="showModal" id="colorlib-page">
             <header>
                 <div class="container">
-                    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+                    <div>
+                        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+                    </div>
+                    <!-- <img onclick="setlightmode('true')" src="img/light.png" class="on" alt=""> -->
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" onclick="setlightmode('true')" type="checkbox" id="flexSwitchCheckDefault">
+                    </div>
+
                 </div>
             </header>
+
         </div>
+    </div>
     </div>
     <div id="app"></div>
 
     <!-- bubbles -->
     <ul class="bg-bubbles">
+        <li></li>
         <li></li>
         <li></li>
         <li></li>
@@ -116,83 +125,24 @@
 
 
 </body>
+<script>
+    if (localStorage.getItem('theme') == 'dark')
+        setlightmode()
 
+
+    function setlightmode() {
+        let light = document.body.classList.toggle('lightmode')
+        if (light) {
+            localStorage.getItem('theme', 'dark')
+        } else {
+            localStorage.removeItem('theme')
+        }
+        document.getElementById('darkBtn').innerHTML = Image
+    }
+</script>
 <style>
     .bg-light {
-        background-color: rgb(0, 0, 0) !important;
-    }
-    
-    @media only screen and (max-width: 600px) {
-        img {
-            width: 237px !important;
-            padding-top: 42px !important;
-            margin-top: -118px !important;
-        }
-        .div {
-            padding: -3px;
-        }
-    }
-    
-    img {
-        width: 340px;
-        margin-bottom: 50px !important;
-        margin-top: auto;
-    }
-    
-    .div {
-        padding: 47px;
-    }
-    
-    html {
-        background-color: black !important;
-    }
-    
-    .colorlib-nav-toggle i::before,
-    .colorlib-nav-toggle i::after {
-        content: '';
-        width: 32px;
-        height: 3px;
-        background: #fff;
-        position: absolute;
-        left: 0;
-        -webkit-transition: 0.2s;
-        -o-transition: 0.2s;
-        transition: 0.2s;
-    }
-    
-    .colorlib-nav-toggle i {
-        position: relative;
-        display: inline-block;
-        width: 22px;
-        height: 5px;
-        color: #000;
-        font: bold 14px/.4 Helvetica;
-        text-transform: uppercase;
-        text-indent: -55px;
-        background: #fff;
-        -webkit-transition: all .2s ease-out;
-        -o-transition: all .2s ease-out;
-        transition: all .2s ease-out;
-    }
-    
-    @media only screen and (max-width: 600px) {
-        footer {
-            padding-top: 5px !important;
-            position: absolute;
-            z-index: 3;
-        }
-        .logo {
-            width: 40px !important;
-            margin-bottom: -98px !important;
-        }
-    }
-    
-    .logo {
-        width: 40px !important;
-    }
-    
-    footer {
-        padding-top: auto;
+        background-color: rgb(13 36 56) !important;
     }
 </style>
 

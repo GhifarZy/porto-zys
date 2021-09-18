@@ -1,6 +1,6 @@
 <template>
 <div>
-              <section class="feature_2 bg-light pt-90 pb-60 text-center">
+    <section class="feature_2 bg-light pt-90 pb-60 text-center">
                 <div style="margin-top: 30px;" class="row">
                     <div class="col-lg-3">
                         <div class="container px-xl-0">
@@ -40,6 +40,7 @@
                                     text-align:justify;
                                     ">{{ aboutme }}<br>{{ mine }}
                                    </p>
+                                   <modal v-show="showModal"></modal>
                                     </div>
                                 </div>
 
@@ -73,7 +74,7 @@
                                    <div class="row">
                                        <div class="col-lg-6">
                                                 <div style="
-                                                border: 6px double #404040;
+                                                border: 6px double rgba(255, 255, 255, 0.3);
                                                 padding: 60px;
                                                 border-radius: 12px;">
                                                 <i style="font-size: 100px;" class=" fas fa-video">
@@ -82,7 +83,7 @@
                                        </div>
                                        <div class="col-lg-6">
                                                 <div style="
-                                                border: 6px double #404040;
+                                                border: 6px double rgba(255, 255, 255, 0.3);
                                                 padding: 60px;
                                                 border-radius: 12px;">
                                                  <i style="font-size: 100px;" class=" fas fa-code">
@@ -134,7 +135,7 @@
                                                  <small style="color: white;
                                                  font-weight:bold;
                                                  font-size:15px; "
-                                                 >- {{ item.tahun }}</small>
+                                                 > - {{ item.tahun }}</small>
                                             </div>
                                        </div>
                                    </div>
@@ -168,7 +169,9 @@ export default {
 }
 
 </script>
+<style scoped>
 
-<style>
 </style>
+
+
 

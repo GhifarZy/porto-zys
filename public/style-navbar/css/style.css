@@ -11023,16 +11023,6 @@ h5,
     opacity: 1;
 }
 
-#colorlib-main-nav .colorlib-table .img:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: '';
-    background: rgba(0, 0, 0, 0.3);
-}
-
 #colorlib-main-nav .colorlib-table .colorlib-table-cell {
     display: table-cell;
     vertical-align: middle;

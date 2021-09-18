@@ -21,7 +21,7 @@
     display: block;
     width: 40px;
     height: 40px;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.15);
     bottom: 90px;
     top: 700px;
@@ -51,7 +51,7 @@
     width: 60px;
     height: 60px;
     animation-duration: 22s;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .bg-bubbles li:nth-child(5) {
@@ -75,16 +75,16 @@
 
 .bg-bubbles li:nth-child(8) {
     left: 55%;
-    width: 20px;
-    height: 20px;
+    width: 80px;
+    height: 80px;
     animation-delay: 15s;
     animation-duration: 40s;
 }
 
 .bg-bubbles li:nth-child(9) {
     left: 25%;
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     animation-delay: 2s;
     animation-duration: 40s;
     background-color: rgba(255, 255, 255, 0.3);
@@ -102,7 +102,7 @@
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-800px) rotate(600deg);
+        transform: translateY(-700px) rotate(600deg);
     }
 }
 

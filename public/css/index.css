@@ -1,0 +1,198 @@
+.darkmode .bg-light {
+    background-color: rgb(13 36 56) !important;
+}
+
+.lightmode .bg-light {
+    background-color: rgb(189 229 253) !important;
+}
+
+h2 {
+    color: rgb(189 229 253) !important;
+}
+
+.lightmode h2 {
+    color: rgb(13 36 56) !important;
+}
+
+.darkmode h2 {
+    color: rgb(189 229 253) !important;
+}
+
+i {
+    color: rgb(189 229 253) !important;
+}
+
+.darkmode i {
+    color: rgb(189 229 253) !important;
+}
+
+.lightmode i {
+    color: rgb(13 36 56) !important;
+}
+
+p {
+    color: rgb(189 229 253) !important;
+}
+
+.darkmode p {
+    color: rgb(189 229 253) !important;
+}
+
+.lightmode p {
+    color: rgb(13 36 56) !important;
+}
+
+a {
+    color: rgb(189 229 253) !important;
+    text-decoration: none;
+}
+
+.darkmode a {
+    color: rgb(189 229 253) !important;
+    text-decoration: none;
+}
+
+.lightmode a {
+    color: rgb(13 36 56) !important;
+    text-decoration: none;
+}
+
+b {
+    color: rgb(189 229 253) !important;
+}
+
+small {
+    color: rgb(189 229 253) !important;
+}
+
+.darkmode small {
+    color: rgb(189 229 253) !important;
+}
+
+.lightmode small {
+    color: rgb(13 36 56) !important;
+}
+
+.darkmode b {
+    color: rgb(189 229 253) !important;
+}
+
+.lightmode b {
+    color: rgb(13 36 56) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 237px !important;
+        padding-top: 42px !important;
+        margin-top: -118px !important;
+    }
+    .div {
+        padding: -3px;
+    }
+    .form-switch .form-check-input {
+        width: 2em;
+        margin-left: -1.5em;
+        background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e);
+        background-position: left center;
+        border-radius: 2em;
+        transition: background-position .15s ease-in-out;
+    }
+}
+
+img {
+    width: 340px;
+    margin-bottom: 50px !important;
+    margin-top: auto;
+}
+
+.div {
+    padding: 47px;
+}
+
+.colorlib-nav-toggle i::before,
+.colorlib-nav-toggle i::after {
+    content: '';
+    width: 32px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.colorlib-nav-toggle i {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 5px;
+    color: #000;
+    font: bold 14px/.4 Helvetica;
+    text-transform: uppercase;
+    text-indent: -55px;
+    background: white;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+#colorlib-main-nav .colorlib-table .img:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    background-color: rgb(13 36 56) !important;
+}
+
+.darkmode #colorlib-main-nav .colorlib-table .img:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    background-color: rgb(13 36 56) !important;
+}
+
+.lightmode #colorlib-main-nav .colorlib-table .img:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    background-color: rgb(189 229 253) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        padding-top: 5px !important;
+        position: absolute;
+        z-index: 3;
+    }
+    .logo {
+        width: 40px !important;
+        margin-bottom: -98px !important;
+    }
+    .on {
+        width: 38px !important;
+        margin-top: -40px !important;
+    }
+}
+
+.logo {
+    width: 40px !important;
+}
+
+footer {
+    padding-top: -6px !important;
+}
+
+.on {
+    width: 38px;
+    margin-top: -6px;
+}

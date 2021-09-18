@@ -1,5 +1,5 @@
 <template>
-     <footer class="footer_1 bg-light pt-90 pb-35 text-center">
+     <footer style="z-index: 1;width:100%;" class="footer_1 bg-light pt-90 pb-35 text-center">
                 <div class="container px-xl-0">
                     <div class="row justify-content-between align-items-center lh-40 links">
                         <div class="col-lg-4 col-sm-6 text-sm-right text-lg-left order-1 order-lg-0">
@@ -11,9 +11,9 @@
                         </div>
                         <div class="col-lg-4 col-sm-6 text-sm-left text-lg-right order-2 order-lg-0 ">
 
-                            <a style="color: white;" target="_blank" href="https://www.instagram.com/ifrzdy_/" class="mx-15 link color-main"><i class="fab fa-instagram"></i></a>
-                            <a style="color: white;" target="_blank" href="https://www.youtube.com/channel/UCl0ywlNWhit6UlDy1uAf4aA" class="mx-15 link color-main"><i class="fab fa-youtube"></i></a>
-                            <a style="color: white;" target="_blank" href="https://github.com/GhifarZy" class="ml-15 link color-main"><i class="fab fa-github"></i></a>
+                            <a  target="_blank" href="https://www.instagram.com/ifrzdy_/" class="mx-15 link color-main"><i class="fab fa-instagram"></i></a>
+                            <a  target="_blank" href="https://www.youtube.com/channel/UCl0ywlNWhit6UlDy1uAf4aA" class="mx-15 link color-main"><i class="fab fa-youtube"></i></a>
+                            <a  target="_blank" href="https://github.com/GhifarZy" class="ml-15 link color-main"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="row justify-content-center">
@@ -23,13 +23,24 @@
                 </div>
             </footer>
 </template>
-
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    created() {
+    window.addEventListener('keydown', (e) => {
+      if (e.key == 'Escape') {
+        this.showModal = !this.showModal;
+      }
+    });
+  },
+  data() {
+    return {
+       showModal: true
+    }
+  }
+
 }
 </script>
 
 <style>
-
 </style>
