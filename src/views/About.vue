@@ -127,7 +127,7 @@
                                        <div style="
                                                 padding: 60px;
                                                 border-radius: 12px;">
-                                                <i style="font-size: 50px;" class=" fas fa-school">
+                                                <i style="font-size: 40px;" class=" fas fa-school">
                                                 </i><br>
                                                   <b style=" color:white;
                                                 font-size:20px;
@@ -162,7 +162,7 @@ export default {
         {id:1, sekolah:"Min Beureunuen", tahun:2012},
         {id:2, sekolah:"MtsS jeumala amal", tahun:2015},
         {id:3, sekolah:"MaS jeumala amal", tahun:2018},
-        {id:4, sekolah:"Politeknik Aceh", tahun:2018}
+        {id:4, sekolah:"Politeknik Aceh", tahun:2021}
       ]
     }
   },

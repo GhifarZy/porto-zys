@@ -11,7 +11,7 @@
                                     <h2  class="small" style="
                                   color:white;
                                   font-family: 'Paytone One', sans-serif;
-                                  " data-aos-duration="600" data-aos="fade-down" data-aos-delay="0" >FULL- STACK</h2>
+                                  " data-aos-duration="600" data-aos="fade-down" data-aos-delay="0" v-show="showModal" >FULL- STACK</h2>
                                     <h2 class="small" style="
                                   color:white;
                                   font-family: 'Secular One', sans-serif;

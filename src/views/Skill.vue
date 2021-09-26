@@ -24,76 +24,12 @@
                                 <div class="col-xl-8 col-lg-10">
                                     <br>
                                     <div class="row">
-                                        <div class="col-lg-4 col-sm-6">
+                                        <div v-for="item in web" :key="item.id" class="col-lg-4 col-sm-6">
                                             <div style="
                                                 padding: 50px;
                                                 border-radius: 12px;">
-                                                <i style="font-size: 50px;" class=" fab fa-git">
-                                                </i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div style="
-                                                padding: 50px;
-                                                border-radius: 12px;">
-                                                <i style="font-size: 50px;" class=" fab fa-github">
-                                                </i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div style="
-                                                padding: 50px;
-                                                border-radius: 12px;">
-                                                <i style="font-size: 50px;" class=" fab fa-cpanel">
-                                                </i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div style="
-                                                padding: 50px;
-                                                border-radius: 12px;">
-                                                <i style="font-size: 50px;" class=" fab fa-css3">
-                                                </i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div style="
-                                                padding: 50px;
-                                                border-radius: 12px;">
-                                                <i style="font-size: 50px;" class=" fab fa-html5">
-                                                </i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div style="
-                                                padding: 50px;
-                                                border-radius: 12px;">
-                                                <i style="font-size: 50px;" class=" fab fa-bootstrap">
-                                                </i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div style="
-                                                padding: 50px;
-                                                border-radius: 12px;">
-                                                <i style="font-size: 50px;" class=" fab fa-php">
-                                                </i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div style="
-                                                padding: 50px;
-                                                border-radius: 12px;">
-                                                <i style="font-size: 50px;" class=" fab fa-vuejs">
-                                                </i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div style="
-                                                padding: 50px;
-                                                border-radius: 12px;">
-                                                <i style="font-size: 50px;" class=" fab fa-laravel">
-                                                </i>
+                                             <img style="width:50px;
+                                             "  :src="item.image" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -124,28 +60,12 @@
                                 <div class="col-xl-8 col-lg-10">
                                     <br>
                                     <div class="row">
-                                        <div class="col-lg-4">
+                                        <div v-for="item in other" :key="item.id" class="col-lg-4">
                                             <div style="
                                                 padding: 60px;
                                                 border-radius: 12px;">
-                                                <i style="font-size: 50px;" class=" fas fa-video">
-                                                </i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div style="
-                                                padding: 60px;
-                                                border-radius: 12px;">
-                                                <i style="font-size: 50px;" class=" fab fa-adobe">
-                                                </i>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div style="
-                                                padding: 60px;
-                                                border-radius: 12px;">
-                                                <i style="font-size: 50px;" class="fas fa-camera">
-                                                </i>
+                                               <img style="width:50px;
+                                             "  :src="item.image" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -166,7 +86,27 @@ export default {
     return {
       nama: "muhammad ghifar ziady",
       aboutme: "When l was 19 years old already had an interest in web programming, from there wanted to make my passion into a job. I believe in learning through practice and seeking out these new experiences will make me a creative programmer.",
-      mine: " In addition to web programming I am also able in terms of video making from videography to cinematography."
+      mine: " In addition to web programming I am also able in terms of video making from videography to cinematography.",
+
+      web:[
+          {id:1, image:"img/skill/Git_icon.svg.png"},
+          {id:2, image:"img/skill/github.png"},
+          {id:3, image:"img/skill/cpanel-logo.png"},
+          {id:4, image:"img/skill/html.png"},
+          {id:5, image:"img/skill/css3.png"},
+          {id:6, image:"img/skill/laravel.png"},
+          {id:7, image:"img/skill/PHP_logo.png"},
+          {id:8, image:"img/skill/vue.png"},
+          {id:9, image:"img/skill/boot.png"},
+          {id:10, image:"img/skill/my.png"},
+          {id:11, image:"img/skill/node.png"},
+          {id:12, image:"img/skill/js.png"},
+      ],
+      other:[
+          {id:1, image:"img/skill/ai.png"},
+          {id:2, image:"img/skill/fiqma.png"},
+          {id:3, image:"img/skill/pr.png"},
+      ]
     }
   },
 }
