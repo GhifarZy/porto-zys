@@ -12,7 +12,7 @@
                         <div class="col-lg-4 col-sm-6 text-sm-left text-lg-right order-2 order-lg-0 ">
 
                             <a  target="_blank" href="https://www.instagram.com/ifrzdy_/" class="mx-15 link color-main"><i class="fab fa-instagram"></i></a>
-                            <a  target="_blank" href="https://www.youtube.com/channel/UCl0ywlNWhit6UlDy1uAf4aA" class="mx-15 link color-main"><i class="fab fa-youtube"></i></a>
+                            <a  target="_blank" href="https://www.linkedin.com/in/ifarziady/" class="mx-15 link color-main"><i class="fab fa-linkedin"></i></a>
                             <a  target="_blank" href="https://github.com/GhifarZy" class="ml-15 link color-main"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
